@@ -45,6 +45,10 @@ export default function Index({ isHome }) {
       name: "LIÊN HỆ",
       link: "/Contact",
     },
+    {
+      name: "Admin",
+      link: "/Dashboard"
+    }
   ];
 
   //event change color navbar
