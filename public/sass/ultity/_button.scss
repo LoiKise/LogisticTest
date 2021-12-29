@@ -1,0 +1,40 @@
+/*--------------- button Members----------------*/
+.ourmember .section-area__btn button {
+  opacity: 0.8;
+  background-color: transparent;
+  background-image: linear-gradient(to right, var(--gradient-color-from), var(--gradient-color-to));
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+}
+.ourmember .section-area__btn button:hover {
+  opacity: 1;
+}
+
+.link-fixed {
+  @include mobile {
+    display: none;
+  }
+}
+
+.link-fixed {
+  @include tablet {
+    display: none;
+  }
+}
+
+.link-fixed {
+  @include desktop {
+    position: fixed;
+    display: block;
+  }
+}
+.btn_linkInFooter {
+  color: #606060;
+  font-size: 1.7rem;
+  &:hover,
+  &:active,
+  &:visited {
+    color: var(--gradient-color-to);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

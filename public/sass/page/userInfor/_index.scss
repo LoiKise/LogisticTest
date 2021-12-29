@@ -1,0 +1,211 @@
+.row-personal{
+  margin: 1% 0;
+}
+.avatar{
+  width: 30%;
+}
+.error{
+  color: red;
+}
+.background{
+  background-color: #EAEAEA;
+}
+.text-position{
+  text-align: center;
+}
+.personal--left, .personal--right{
+  border-radius: 30px;
+  padding: 5%;
+  background-color: #FFF;
+}
+.personal{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30%;
+  padding-bottom: 2%;
+  & p , & span{
+    font-size: 1.2rem;
+  }
+}
+.personal--left .personal--title{
+  background-color: #FEE1D3;
+  color: #FE621B;
+  width: 80%;
+  height: 3rem;
+  border-radius: 5px;
+  line-height: 3rem;
+  margin: 0 auto 10%;
+  font-weight: 500;
+  font-size: 1.25rem;
+  box-shadow: 0px 2px #BEBEC0;
+}
+
+.personal--left .infor--changepass{
+  text-decoration: underline;
+  color: #BEBEC0;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.personal--right{
+  margin-top: 10%;
+}
+
+.personal--right .order--title{
+  background-color: #FEE1D3;
+  color: #FE621B;
+  width: 80%;
+  height: 3rem;
+  border-radius: 5px;
+  line-height: 3rem;
+  margin: 0 auto 5%;
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-align: center;
+  box-shadow: 0px 2px #BEBEC0;
+}
+
+.personal--right .order-content{
+  width: 100%;
+}
+
+.personal--right .order--details{
+  background-color: #FFFFE3;
+  padding: 2% 0;
+  text-align: center;
+  margin: 0 3% 3%;
+  box-shadow: 3px 3px #BEBEC0;
+}
+
+.order--logo {
+  width: 10%;
+}
+
+.personal--right .order--seen{
+  color: #FFF;
+  border: none;
+  border-radius: 10px;
+  padding: 2%;
+  height: 3rem;
+  width: 35%;
+  font-size: 1.0rem;
+}
+.button {
+  width: 40%;
+  margin: 1rem 0.5rem;
+  font-size: 1.2rem !important;
+  padding: 7px;
+  font-weight: 500;
+  border-radius: 9px;
+  outline: none;
+  border: none;
+}
+.form-input{
+  margin: 0 auto;
+  width: 65%;
+}
+
+/* Popup style */
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+ 
+.box {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: 45%;
+  background: #FFFFE3;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+ 
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(15% - 30px);
+  top: 15%;
+  background: #EDEDED;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px){
+  .button{
+    width: 50%;
+  }
+  .box{
+    margin-top: 15%;
+    width: 70%;
+  }
+  .close-icon{
+    top: 10%;
+  }
+  .text-position{
+    text-align: right;
+  }
+  .personal{
+    padding-top: 10%;
+  }
+  .personal--right .order--title{
+    width: 35%;
+  }
+  .personal--left{
+    margin: 0 3%;
+  }
+
+  .personal--right{
+    margin-top: 0;
+  }
+
+  .personal--right .order--details{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .personal--right .order-content{
+      width: 50%;
+  }
+  .personal--right .order--seen{
+      height: 2.5rem;
+      width: 30%;
+      line-height: 0.3rem;
+  }
+  .personal{
+    & p , & span{
+      font-size: 0.95rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1051px){
+  .button{
+    width: 50%;
+  }
+  .close-icon{
+    top: 20%;
+  }
+  .personal{
+    & p , & span{
+      font-size: 1.2rem;
+    }
+  }
+  .personal--right .order--seen{
+    width: 20%;
+}
+}

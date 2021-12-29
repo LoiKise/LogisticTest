@@ -1,0 +1,54 @@
+// Declaration Styles
+@import "./abstracts/mixin";
+@import "./abstracts/variable";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/animation";
+//FallBack
+@import "./page/fallback/fallback";
+// Animation
+@import "./base/animation";
+
+// Layout
+@import "./layout/login";
+@import "./layout/register";
+@import "./layout/header";
+@import "./layout/navbar";
+@import "./layout/footer";
+@import "./layout/notfound";
+
+// Ultity
+@import "./ultity/button";
+
+// Dashboard Page
+@import "./page/dashboard/dashboard";
+@import "./page/dashboard/admin";
+@import "./page/dashboard/login";
+@import "./page/dashboard/MUI";
+// Home Page
+@import "./page/home/sliderbar";
+@import "./page/home/about";
+@import "./page/home/service";
+@import "./page/home/order";
+@import "./page/home/members";
+@import "./page/home/news";
+@import "./page/home/contact";
+@import "./page/home/ourpartner";
+@import "./page/home/chatbox";
+// Contact Page
+// About Page
+// Recruitment Page
+@import "./page/recruitment/recruitment";
+@import "./page/recruitment/job";
+@import "./page/recruitment/detailJob";
+
+//Service
+@import "./page/Service/index";
+
+//Search
+@import "./page/Search/index";
+
+//UserInfor
+@import "./page/UserInfor/index";
+
+// chatbox

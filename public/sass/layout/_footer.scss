@@ -1,0 +1,222 @@
+/* Footer */
+.footer {
+  border-top: 1rem solid;
+  border-image: linear-gradient(to right, #c91410, #ff5e15) 10;
+}
+.footer-list {
+  display: flex;
+  margin-top: 7rem;
+  margin-bottom: 9rem;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem 0;
+  width: 25%;
+}
+.footer-item:first-child {
+  margin-right: 5.4rem;
+}
+.footer-item h2 {
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 7rem;
+  text-transform: uppercase;
+}
+.footer-item h2::after {
+  content: "";
+  position: absolute;
+  background-color: #ff5e15;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  margin-top: 4px;
+}
+.footer-item p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #606060;
+}
+.footer-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 0;
+  margin-right: 2.4rem;
+}
+.footer-item-list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2.4rem;
+}
+.footer-item-list-item__content {
+  display: flex;
+  flex-direction: column;
+}
+.footer-item-list-item__content p {
+  font-size: 1.8rem;
+  color: #000;
+}
+.footer-span {
+  color: #606060;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.footer-span:last-child {
+  font-weight: bold;
+  color: #000;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.footer-bottom span:first-child svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-bottom: 1rem;
+}
+.footer-bottom span:nth-child(2) {
+  color: #606060;
+  font-weight: 600;
+  margin: 0 1rem;
+  font-size: 1.7rem;
+}
+.footer-bottom span:last-child {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+.footer-phone__title {
+  color: #39d42d;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.footer-mail__title {
+  color: #ee2529;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.footer-youtube__title {
+  color: #ee2529;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.footer-facebook__title {
+  color: #29aae3;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Scroll Into View*/
+.scroll-btn {
+  position: fixed;
+  bottom: 180px;
+  right: 32px;
+}
+
+/*---------------------------------reponsive------------------------*/
+
+// .footer {
+//   @include mobile {
+//     // margin-top: 555px;
+//     .container {
+//       max-width: 100% !important;
+//       .footer-list {
+//         flex-direction: column;
+//         .footer-item {
+//           width: 100% !important;
+//           margin: 0px auto !important;
+//           display: flex;
+//           align-items: center;
+//           margin-top: 4rem;
+//           .footer-span{
+//             text-align: center;
+//           }
+//           span {
+//             margin: 0px auto;
+//           }
+//           > img {
+//             margin: 0px auto;
+//           }
+//         }
+//       }
+//     }
+//     .footer-bottom {
+//       display: flex;
+//       justify-content: center;
+//       margin-top: -50px;
+//     }
+//     .footer-item-list-item__content {
+//       display: block;
+//     }
+//   }
+//   @include tablet {
+//     .container {
+//       width: 100% !important;
+//       height: auto;
+//       .footer-list {
+//         flex-direction: column !important;
+//         .footer-item {
+//           width: 100%;
+//           margin: 0px auto;
+//           display: flex;
+//           align-items: center;
+//           .footer-span{
+//             text-align: center;
+//           }
+//           > img {
+//             margin: 0px auto;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   @include desktop {
+//     margin-top: 0px;
+//     .container {
+//       margin: 0px auto;
+//       width: 1200px !important;
+//       .footer-list {
+//         display: flex;
+//         flex-direction: row !important;
+//         .footer-item {
+//           justify-content: flex-start;
+//           align-items: none;
+//           display: flex;
+//           margin-top: 7rem;
+//           margin-bottom: 9rem;
+//           align-items: flex-start;
+//           .footer-span{
+//             text-align: left;
+//           }
+//           span {
+//             margin: 0px 0px;
+//           }
+//           &:nth-child(1) {
+//             margin-right: 5.4rem !important;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+.footer {
+  .container {
+    @include ipadPro {
+      .footer-list {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        .footer-item {
+          width: 100%;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

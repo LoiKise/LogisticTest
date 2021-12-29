@@ -1,0 +1,248 @@
+.login-form {
+    padding: 0 30px;
+}
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.login-form form {
+    width: 35%;
+    border: none;
+}
+.login-form form:hover {
+    border-bottom: none !important;
+}
+.login-form input {
+    width: 100%;
+    font-size: 14px !important;
+    border-bottom: 2px #ddd solid !important;
+    margin-bottom: 30px;
+}
+.login-form input:hover,
+.login-form input:focus {
+    border-bottom: 2px #111 solid !important;
+}
+.login-form button {
+    border: none;
+    background: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 20px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.login-form label {
+    font-size: 14px;
+    border-bottom: 1px #888 solid;
+    color: #888;
+}
+.login-form label:hover {
+    border-bottom: 1px #000 solid;
+    color: #000;
+}
+.login-err {
+    padding: 0 30px;
+    font-size: 12px;
+}
+.login-err div {
+    width: 35%;
+    padding: 5px;
+}
+.login-err div div {
+    width: 100%;
+    margin: 5px 0;
+    background-color: #fff7f9;
+    color: #1e1e1e;
+    border: 1px solid #ffcccf;
+    display: flex;
+    align-items: center;
+}
+.login-success {
+    background-color: #d9f3d9 !important;
+    border: 1px solid #52f55b !important;
+}
+.login-form form,
+.login-err div {
+    width: 40%;
+}
+.login-form input:hover,
+.login-form input:focus {
+    border: none !important;
+}
+.login-form form,
+.login-err div {
+    width: 400px;
+}
+
+.search-icon,
+.login-icon {
+    display: none;
+}
+.search-form,
+.login-form {
+    padding: 0;
+}
+.login-form form,
+.login-err div {
+    width: 90%;
+}
+.login-err {
+    padding: 0 0px;
+}
+.no-p {
+    padding: 0 !important;
+}
+.w-100 {
+    width: 100% !important;
+}
+.w-50 {
+    width: 50% !important;
+}
+.ml-2 {
+    margin-left: 20px !important;
+}
+.mr-2 {
+    margin-right: 20px !important;
+}
+.ml-5 {
+    margin-left: 50px !important;
+}
+.mr-5 {
+    margin-right: 50px !important;
+}
+.no-outline:focus {
+    outline: none !important;
+    border-bottom: 2px solid #111;
+}
+.no-outline:hover {
+    border-bottom: 2px solid #111;
+    transition: 0.5s;
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+.nodrag {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    -ms-user-drag: none;
+    user-drag: none;
+}
+
+.flex {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-col {
+    display: flex !important;
+    flex-direction: column;
+}
+
+/* Animation  */
+@keyframes opa {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.opa {
+    animation-name: opa;
+    animation-duration: 0.8s;
+}
+
+@keyframes opa {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.opa2 {
+    animation-name: opa;
+    animation-duration: 2s;
+}
+
+@keyframes active_line {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+}
+.fadeIn-duration {
+    animation-duration: 0.6s !important;
+}
+
+.fadeToRight {
+    animation-name: fadeToRight;
+    animation-duration: 0.5s;
+}
+@keyframes fadeToRight {
+    from {
+        transform: translateX(200px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.fadeToLeft {
+    animation-name: fadeToLeft;
+    animation-duration: 0.5s;
+}
+@keyframes fadeToLeft {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+/* Button */

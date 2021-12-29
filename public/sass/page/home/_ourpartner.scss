@@ -1,0 +1,28 @@
+.ourpartner {
+  height: 455px;
+  background-color: white;
+
+  &-list {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    overflow: hidden;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 33px;
+  }
+
+  &-logo {
+    height: 80px;
+  }
+}
+

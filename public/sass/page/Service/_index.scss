@@ -1,0 +1,90 @@
+.order {
+  padding-top: 180px;
+  .list-cost {
+    > span {
+      background: #fd7a3b;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      margin-left: 40px;
+      padding: 12px 22px 12px;
+      cursor: pointer;
+    }
+  }
+  span {
+    line-height: 19px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+
+.nav-tabs {
+  display: flex;
+  align-items: center;
+  border-bottom: none !important;
+  margin-bottom: 10px !important;
+  .nav-link.active {
+    background-color: #fdcdb7 !important;
+    font-weight: 900;
+    color: #fd7a3b !important;
+    padding: 13px;
+  }
+  .nav-link {
+    font-weight: 900;
+    color: #a3aa46;
+    &:hover {
+      border-color: transparent !important;
+    }
+  }
+}
+.tab-content {
+  > .active {
+    width: 168% !important;
+  }
+}
+
+.form_order {
+  .section-area {
+    background-image: linear-gradient(
+      to right,
+      #e44846,
+      var(--gradient-color-to)
+    );
+    border-radius: 66px !important;
+    margin-top: 70px;
+    margin-bottom: 86px;
+  }
+}
+.form_orderr {
+  .section-area {
+    background-image: linear-gradient(
+      to right,
+      #e44846,
+      var(--gradient-color-to)
+    );
+    border-radius: 0 !important;
+    margin-top: 70px;
+    margin-bottom: 86px;
+  }
+}
+
+.ordernow-form__deliverylocation-item input {
+  font-size: 15px;
+}
+.section-area__btn button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 238px;
+  height: 64px;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #1f2c8c;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+}

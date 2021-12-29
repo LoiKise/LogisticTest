@@ -1,0 +1,94 @@
+/* Tuyển Dụng*/
+.recruitment {
+  padding-top: 5%;
+  color: #fff;
+  background-image: linear-gradient(to right, #c91410, #ff5e15);
+}
+.recruitment-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.recruitment-title {
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 3.2rem;
+  margin-bottom: 2rem;
+  font-size: 3.6rem;
+}
+.recruitment-span {
+  margin-bottom: 6.6rem !important;
+  font-size: 1.8rem;
+}
+.recruitment-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto 4rem;
+  button {
+    color: rgba(0, 0, 0, 0.4);
+    min-width: 4rem;
+    height: 3rem;
+    margin: 0 1.5rem;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    border-radius: 2px;
+    font-weight: 600;
+
+    &.active {
+      color: #fff;
+      background: #ee4d2d;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background: #f05d40;
+      }
+    }
+  }
+}
+.recruitment-icon {
+  color: rgba(0, 0, 0, 0.4);
+  min-width: 4rem;
+  height: 3rem;
+  margin: 0 1.5rem;
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  border-radius: 2px;
+  svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    fill: currentColor;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .recruitment {
+    padding-top: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .recruitment {
+    padding-top: 15%;
+  }
+  .recruitment-pagination {
+    text-align: center;
+    display: block;
+  }
+}
+@media screen and(max-width:640px) {
+  .recruitment {
+    padding-top: 25%;
+  }
+  .recruitment-pagination {
+    display: flex;
+    button {
+      font-size: 1.6rem;
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,182 @@
+/* Order now */
+.ordernow {
+  background-image: linear-gradient(
+    to right,
+    var(--gradient-color-from),
+    var(--gradient-color-to)
+  );
+}
+.section-area__img {
+  height: 2rem;
+}
+.ordernow__top {
+  margin-top: 60px;
+}
+.ordernow__top span {
+  color: white;
+}
+.ordernow__top .section__top-header {
+  color: white;
+}
+.ordernow__top .section__top span::before,
+.ordernow__top .section__top span::after {
+  background-color: white;
+}
+
+.ordernow-form {
+  margin-top: 60px;
+}
+.ordernow-form__userinfor-item {
+  width: 100%;
+  position: relative;
+}
+.ordernow-form__userinfor-item input,
+.ordernow-form__deliverylocation-item input,
+.ordernow-form__deliverylocation-item select,
+.ordernow-form__about-item select,
+.ordernow-form__about input {
+  border: none;
+  border-radius: 30px;
+  padding-left: 32px;
+  padding-right: 50px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  height: 70px;
+  width: 100%;
+}
+.ordernow-form__deliverylocation-itemm {
+  padding-left: 20px !important;
+  padding-right: 0 !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.ordernow-form__deliverylocation-itemm select {
+  color: red;
+}
+.ordernow-form__deliverylocation-item select {
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+.ordernow-form__deliverylocation-item option {
+  color: #000;
+}
+.ordernow-form__userinfor-item input:focus,
+.ordernow-form__deliverylocation-item input:focus,
+.ordernow-form__about input:focus {
+  outline: none;
+}
+
+.ordernow-form__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 28px;
+}
+.ordernow-form__iconn {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-150%, -75%);
+}
+
+//   .ordernow-form__deliverylocation {
+//     padding-top: 43px;
+//   }
+.ordernow-form__deliverylocation-header {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  padding-bottom: 12px;
+  margin-left: 40px;
+}
+
+.ordernow-form__deliverylocation .ordernow-form__icon {
+  right: 40px;
+}
+.ordernow-form__about {
+  margin-top: 68px;
+}
+
+.ordernow-form__about-item .ordernow-form__icon {
+  right: 40px;
+}
+.section__top {
+  span {
+    line-height: 19px;
+    font-size: 3rem !important;
+    font-weight: 500;
+  }
+}
+.nav-tabs {
+  .nav-item {
+    font-size: 15px;
+  }
+}
+.form__about-checklist {
+  display: flex;
+  justify-content: space-around;
+}
+.form__about-checkitem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  width: 250px;
+  color: white;
+  font-size: 1.35rem;
+}
+.form__about-checkitem input {
+  width: 26px;
+}
+.form__about-checkitem span {
+  margin-left: 13px;
+}
+
+// /*---------------------------------reponsive------------------------*/
+
+// .ordernow {
+//   @include mobile {
+
+//     height: auto;
+//   }
+//   .ordernow-form__userinfor-item {
+//     margin-bottom: 20px;
+//   }
+//   .ordernow-form__deliverylocation-item {
+//     margin-bottom: 20px;
+//   }
+//   .ordernow-form__about{
+//     margin-top: 0;
+
+//     &-item{
+//       margin-bottom: 20px;
+//     }
+//   }
+//   .row{
+//     margin-left: 0;
+//   }
+// }
+.ordernow {
+  @include mobile {
+    margin-top: 60%;
+    height: auto;
+  }
+  .ordernow-form__userinfor-item {
+    margin-bottom: 20px;
+  }
+  .ordernow-form__deliverylocation-item {
+    margin-bottom: 20px;
+  }
+  .ordernow-form__about {
+    margin-top: 0;
+
+    &-item {
+      margin-bottom: 20px;
+    }
+  }
+  .row {
+    margin-left: 0;
+  }
+}

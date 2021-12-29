@@ -1,0 +1,258 @@
+.slider {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../assets/img/imgs/Background/backgroundHeader.png");
+  height: 100vh;
+  width: auto;
+}
+.header__slogan {
+  position: relative;
+  top: 30%;
+  left: 20%;
+  height: 100px;
+  display: inline-block;
+}
+.header__slogan-text {
+  position: relative;
+  margin: 0;
+  font-size: 5rem;
+  font-weight: 700;
+  color: white;
+}
+.header__slogan-text span {
+  color: var(--gradient-color-to);
+}
+.header__slogan-icon {
+  position: absolute;
+  top: 0;
+  right: -40%;
+  animation: toTop 2s cubic-bezier(1, 0, 0, 1);
+}
+@keyframes toTop {
+  from {
+    top: 200%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.header__button {
+  position: relative;
+  top: 50%;
+  left: 20%;
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  a {
+    &:hover {
+      text-decoration: none;
+      color: azure;
+    }
+  }
+}
+
+.header__button-search,
+.header__button-service {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 15px;
+  width: 200px;
+  height: 60px;
+  font-size: 1.6rem;
+
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.4s linear;
+}
+.header__button-search {
+  background-image: linear-gradient(
+    to right,
+    var(--gradient-color-from),
+    var(--gradient-color-to)
+  );
+}
+.account-name {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: 100px !important;
+}
+.header__button-search--link {
+  text-decoration: none;
+}
+.header__button-search--link:hover {
+  text-decoration: none;
+}
+.header__button-search:hover {
+  opacity: 1;
+}
+
+.header__button-service {
+  position: relative;
+  background-color: transparent;
+  border: 2px solid white;
+}
+.header__button-service:hover.header__button-service::after {
+  width: 10px;
+}
+.header__button-service:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.header__button-service::after {
+  content: "";
+  position: absolute;
+  bottom: 15%;
+  width: 130px;
+  height: 4px;
+  background-image: linear-gradient(
+    to right,
+    var(--gradient-color-from),
+    var(--gradient-color-to)
+  );
+  transition: width 0.4s linear;
+}
+
+.header__button-search:focus,
+.header__button-service:focus {
+  outline: none;
+}
+.header__button-search img,
+.header__button-service img {
+  height: 2rem;
+}
+
+/*---------------------------------reponsive------------------------*/
+
+// .slider {
+//   .header__slogan {
+//     @include mobile {
+//       top: 24%;
+//       left: 3%;
+//     }
+//     @include ipadPro {
+//       top: 30%;
+//       left: 14%;
+//     }
+//     @include tablet {
+//       top: 24%;
+//       left: 3%;
+//     }
+
+//     @include tablet-plus {
+//       top: 30%;
+//       left: 22%;
+//     }
+//     @include desktop {
+//       top: 30%;
+//       left: 20%;
+//     }
+//     .header__slogan-text {
+//       @include mobile {
+//         font-size: 3rem;
+//       }
+//     }
+//     .header__slogan-icon {
+//       @include mobile {
+//         display: none;
+//       }
+//       @include tablet {
+//         right: 0%;
+//       }
+//       @include tablet-plus {
+//         right: -34%;
+//       }
+//       @include desktop {
+//         right: -56%;
+//       }
+//     }
+//   }
+//   .header__button {
+//     @include mobile {
+//       display: flex;
+//       flex-direction: column;
+//       width: 0px;
+//     }
+//     button {
+//       margin-bottom: 15px;
+//     }
+//     @include tablet {
+//       right: -25%;
+//       left: 0%;
+//       width: 500px;
+//       margin: 0px auto;
+//     }
+//     @include tablet-plus {
+//       width: 765px;
+//     }
+//     @include desktop {
+//       position: relative;
+//       top: 50%;
+//       left: 0%;
+//       width: 900px;
+//       display: flex;
+//       justify-content: space-between;
+//     }
+//   }
+// }
+.slider {
+  @include res-1200 {
+    .header__slogan {
+      @include res-1200 {
+        position: relative;
+        top: 30%;
+        left: 25%;
+      }
+      @include ipadPro {
+        left: 10%;
+        .header__slogan-icon {
+          right: -29%;
+        }
+      }
+      @include tablet {
+        left: 5%;
+      }
+    }
+    @include mobile {
+      .header__slogan-text {
+        font-size: 30px;
+      }
+      .header__slogan-icon {
+        display: none;
+      }
+    }
+  }
+  .header__button {
+    @include ipadPro {
+      justify-content: space-around;
+      left: 0%;
+    }
+    @include tablet {
+      left: -8%;
+      width: 828px;
+      display: flex;
+      justify-content: space-around;
+    }
+    @include mobile {
+      width: 400px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .header__button-search {
+      margin-bottom: 10px;
+    }
+  }
+}

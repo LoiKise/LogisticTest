@@ -1,0 +1,138 @@
+.whoweare {
+  background-color: white;
+
+  .whoweare__content {
+    margin-top: 10.25rem;
+  }
+  .whoweare__content-img img {
+    width: 95%;
+    border-radius: 30px;
+  }
+  .whoweare__content-img {
+    position: relative;
+  }
+  .whoweare__content-experience {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 21%;
+    background-image: linear-gradient(
+      to right,
+      var(--gradient-color-from),
+      var(--gradient-color-to)
+    );
+    border-radius: 20px;
+  }
+  .whoweare__content-experience span {
+    position: relative;
+    font-size: 6.9rem;
+    font-weight: 700;
+    color: white;
+  }
+  .whoweare__content-experience span::after {
+    position: absolute;
+    bottom: 65%;
+    left: 90%;
+    content: "+";
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  .whoweare__content-experience p {
+    margin-left: -25px;
+    font-size: 2.1rem;
+    font-weight: 900;
+    color: white;
+  }
+  .whoweare__content-text span {
+    color: var(--gradient-color-to);
+    font-size: 3rem;
+    font-weight: 700;
+    position: relative;
+    margin-left: 70px;
+  }
+  .section__top-header {
+    font-size: 4rem;
+  }
+  .whoweare__content-text span::before {
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 29.5px);
+    content: "";
+    width: 40.5px;
+    height: 1.7px;
+    background-color: var(--gradient-color-to);
+  }
+  .content-text__header {
+    font-size: 5rem;
+    margin-top: 30px;
+    font-weight: 900;
+    line-height: 6rem;
+    text-transform: capitalize;
+  }
+
+  .content-text__list {
+    list-style: none;
+  }
+  .content-text__item {
+    position: relative;
+    display: flex;
+    margin-top: 25px;
+  }
+  .content-text__item img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* height: 100%; */
+  }
+  .content-text__item:last-child img {
+    height: 68px;
+    left: 3%;
+  }
+  .content-text__text {
+    margin-left: 110px;
+  }
+  .content-text__text-header {
+    font-size: 2.75rem;
+    font-weight: 900;
+  }
+  .content-text__text p {
+    font-size: 1.7rem;
+    margin-top: 10px;
+    text-transform: capitalize;
+    opacity: 0, 6;
+    line-height: 2.1rem;
+  }
+}
+
+/*---------------------------------reponsive------------------------*/
+
+.section__top {
+  @include tablet {
+    margin-top: 70px;
+  }
+}
+
+.whoweare {
+  @include mobile {
+    .whoweare__content-text {
+      span {
+        margin-left: 0px;
+      }
+    }
+  }
+
+  .whoweare__content-experience {
+    @include mobile {
+      span {
+        font-size: 4.9rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+/* Công việc */
+.job-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 4.9rem;
+  margin-bottom: 3.6rem;
+}
+
+.job-item {
+  padding: 2.2rem;
+  background-color: #fff;
+  border-left: 5px solid #fff;
+  box-shadow: 4px 4px 10px 2px #ccc;
+  width: 1000px;
+}
+.job-item:not(:last-child) {
+  margin-bottom: 5rem;
+}
+.job-item:last-child {
+  margin-bottom: 6.2rem;
+}
+.job-item-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.job-item-list {
+  display: grid;
+  grid-template-columns: 1.5fr 1.3fr 0.9fr 0.6fr;
+}
+.job-item-list-item {
+  display: flex;
+  align-items: center;
+}
+.job-item-list-item span {
+  margin-left: 1rem;
+  color: #212529;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.job-item-btn {
+  cursor: pointer;
+  padding: 1.6rem;
+  background-color: #56cb81;
+  border-radius: 1rem;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 500;
+  width: max-content;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+.job-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-search {
+  display: flex;
+  max-width: 400px;
+  margin-top: 2rem;
+  padding: 4px;
+  border: 1px solid #ccc;
+
+  input {
+    padding: 4px 16px;
+    font-size: 1.4rem;
+    color: #000;
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+
+  button {
+    background-color: #000;
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    transition: all 1s ease;
+
+    &:hover {
+      background-color: #fff;
+      transition: all 1s ease;
+    }
+
+    &:hover svg {
+      fill: #000;
+      transition: all 1s ease;
+    }
+    svg {
+      fill: #fff;
+      transition: all 1s ease;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .job-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .job-item-list {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+  }
+  .job-item-btn {
+    padding: 1rem;
+    margin-left: auto;
+  }
+}
+
+@media screen and(max-width:640px) {
+  .job-item-list {
+    gap: 1rem 0;
+    grid-template-columns: 1fr;
+  }
+  .job-item-btn {
+    margin: 0;
+  }
+}

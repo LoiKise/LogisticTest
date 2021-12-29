@@ -1,0 +1,99 @@
+.ourmember__top {
+  margin-top: 60px;
+}
+.ourmember-list {
+  margin-top: 63px;
+}
+.ourmember-img {
+  width: 100%;
+  border-radius: 50%;
+  border: 0.2px solid var(--gradient-color-to);
+  cursor: pointer;
+}
+.ourmember-infor {
+  text-align: center;
+  margin-top: 42px;
+}
+.ourmember-infor__membername {
+  font-size: 2.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.ourmember-infor__memberposition {
+  color: var(--gradient-color-to);
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.css-1fgwbii {
+  background-color: #ffff;
+  border: none;
+  width: 740px !important;
+}
+
+.resume-header {
+  background: #d8f4fc;
+  margin: 29px -32px !important;
+  display: block;
+  padding: 7px 45px;
+  border-top: 1px #ace0f0 solid;
+  border-bottom: 1px #ace0f0 solid;
+  width: 109%;
+  height: 100px;
+}
+.avatar {
+  width: 80% !important;
+  border-radius: 500%;
+}
+#app-fullName {
+  font-size: 3.5rem;
+}
+.resume-body {
+  .form-group {
+    p {
+      font-size: 15px;
+      font-weight: 500;
+    }
+    input {
+      width: 10 0%;
+      height: 25px;
+      border-radius: 4px;
+      outline: none;
+      border: 1px solid;
+    }
+  }
+}
+.CV-input .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root{
+  font-size:  1.3rem !important;
+}
+/*---------------------------------reponsive------------------------*/
+// .ourmember{
+//   @media screen and (max-width: 1023px) {
+//     padding-bottom: 100px;
+//   }
+//   @include tablet{
+//     .row {
+//       margin-left: 0;
+//     }
+//   }
+// }
+// .ourmember-list {
+//   .ourmember-item {
+//     @media screen and (max-width: 767px) {
+//       max-width: 50%;
+//       margin: 0px auto;
+//     }
+//     @include mobile {
+//       max-width: 50%;
+//       margin: 0px auto;
+//     }
+//     @include tablet {
+//       max-width: 50%;
+//       margin: 0px auto;
+//     }
+//     @include desktop {
+//       max-width: 100%;
+//     }
+//   }
+// }
